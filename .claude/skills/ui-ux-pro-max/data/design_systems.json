@@ -1,0 +1,154 @@
+{
+  "systems": [
+    {
+      "name": "Salon Soft Luxe",
+      "niches": ["salon", "hair", "hair salon", "haircut", "stylist"],
+      "palette": {
+        "bg": "#FBF7F4",
+        "surface": "#FFFFFF",
+        "text": "#2B2622",
+        "primary": "#A8654A",
+        "accent": "#D9A679"
+      },
+      "fonts": { "heading": "Playfair Display", "body": "Inter" },
+      "section_patterns": ["hero", "services", "stylists", "gallery", "testimonials", "pricing", "booking", "contact", "footer"],
+      "vibe": ["warm", "elegant", "approachable", "feminine", "cozy"],
+      "rationale": "Warm neutral base with terracotta accents reads inviting and premium without feeling clinical."
+    },
+    {
+      "name": "Luxe Spa Serenity",
+      "niches": ["luxury spa", "spa", "day spa", "resort spa", "wellness spa"],
+      "palette": {
+        "bg": "#F4F1EC",
+        "surface": "#FFFFFF",
+        "text": "#26302B",
+        "primary": "#4C6B5E",
+        "accent": "#C2A878"
+      },
+      "fonts": { "heading": "Cormorant Garamond", "body": "Mulish" },
+      "section_patterns": ["hero", "experience", "treatments", "ambience-gallery", "memberships", "testimonials", "booking", "contact", "footer"],
+      "vibe": ["serene", "luxury", "calm", "organic", "premium"],
+      "rationale": "Muted sage and soft gold evoke tranquility and indulgence for a high-end spa audience."
+    },
+    {
+      "name": "Clinical Trust Dental",
+      "niches": ["dental clinic", "dental", "dentist", "orthodontist", "oral care"],
+      "palette": {
+        "bg": "#F5F9FC",
+        "surface": "#FFFFFF",
+        "text": "#16242E",
+        "primary": "#1C6E8C",
+        "accent": "#3FB5A6"
+      },
+      "fonts": { "heading": "Poppins", "body": "Source Sans 3" },
+      "section_patterns": ["hero", "services", "why-us", "team", "technology", "testimonials", "insurance", "appointment", "contact", "footer"],
+      "vibe": ["clean", "trustworthy", "professional", "modern", "reassuring"],
+      "rationale": "Cool blue-teal signals hygiene and trust, a baseline expectation for dental care."
+    },
+    {
+      "name": "Derma Clarity",
+      "niches": ["dermatology", "skin clinic", "dermatologist", "skin care clinic", "skincare"],
+      "palette": {
+        "bg": "#FAF8F7",
+        "surface": "#FFFFFF",
+        "text": "#2A2530",
+        "primary": "#6E5A8C",
+        "accent": "#E0A6B5"
+      },
+      "fonts": { "heading": "Spectral", "body": "Nunito Sans" },
+      "section_patterns": ["hero", "conditions-treated", "treatments", "doctors", "results-gallery", "testimonials", "consultation", "contact", "footer"],
+      "vibe": ["clinical", "refined", "calm", "science-backed", "gentle"],
+      "rationale": "Soft plum with rose accent balances medical credibility with skin-health warmth."
+    },
+    {
+      "name": "MedSpa Aesthetic Glow",
+      "niches": ["medspa", "med spa", "aesthetic", "aesthetics clinic", "cosmetic clinic", "injectables"],
+      "palette": {
+        "bg": "#FCF9F6",
+        "surface": "#FFFFFF",
+        "text": "#2E2723",
+        "primary": "#B08D57",
+        "accent": "#9C7BB5"
+      },
+      "fonts": { "heading": "Marcellus", "body": "Jost" },
+      "section_patterns": ["hero", "treatments", "before-after", "team", "memberships", "testimonials", "booking", "financing", "contact", "footer"],
+      "vibe": ["luxury", "glamorous", "modern", "polished", "confident"],
+      "rationale": "Champagne gold with a refined lilac accent conveys aspirational, results-driven beauty."
+    },
+    {
+      "name": "Sharp Fade Barbershop",
+      "niches": ["barbershop", "barber", "mens grooming", "mens salon", "fade"],
+      "palette": {
+        "bg": "#16181C",
+        "surface": "#22262C",
+        "text": "#F2F0EC",
+        "primary": "#C8A04B",
+        "accent": "#B5483C"
+      },
+      "fonts": { "heading": "Oswald", "body": "Roboto" },
+      "section_patterns": ["hero", "services", "barbers", "gallery", "pricing", "testimonials", "booking", "location", "footer"],
+      "vibe": ["bold", "masculine", "vintage", "rugged", "high-contrast"],
+      "rationale": "Dark charcoal with brass and rust accents feels classic, masculine, and crafted."
+    },
+    {
+      "name": "Polished Nail Studio",
+      "niches": ["nail studio", "nail salon", "nails", "manicure", "pedicure"],
+      "palette": {
+        "bg": "#FFF6F8",
+        "surface": "#FFFFFF",
+        "text": "#33232A",
+        "primary": "#D46A8C",
+        "accent": "#E6B7C9"
+      },
+      "fonts": { "heading": "Quicksand", "body": "Karla" },
+      "section_patterns": ["hero", "services", "design-gallery", "pricing", "testimonials", "booking", "contact", "footer"],
+      "vibe": ["playful", "feminine", "fresh", "trendy", "bright"],
+      "rationale": "Soft pinks read fun and on-trend, matching a creative nail-art audience."
+    },
+    {
+      "name": "Holistic Wellness Grove",
+      "niches": ["wellness", "holistic", "wellness center", "yoga", "meditation", "naturopathy"],
+      "palette": {
+        "bg": "#F3F2EC",
+        "surface": "#FFFFFF",
+        "text": "#2B2E26",
+        "primary": "#6B7F4B",
+        "accent": "#C9904F"
+      },
+      "fonts": { "heading": "Fraunces", "body": "Work Sans" },
+      "section_patterns": ["hero", "philosophy", "offerings", "practitioners", "classes", "testimonials", "booking", "contact", "footer"],
+      "vibe": ["natural", "grounded", "calm", "earthy", "mindful"],
+      "rationale": "Earthy greens and warm ochre signal natural, grounded, holistic care."
+    },
+    {
+      "name": "Kinetic Fitness Gym",
+      "niches": ["fitness", "gym", "personal training", "crossfit", "strength"],
+      "palette": {
+        "bg": "#101316",
+        "surface": "#1C2024",
+        "text": "#F4F6F7",
+        "primary": "#E5482E",
+        "accent": "#2DBE8A"
+      },
+      "fonts": { "heading": "Anton", "body": "Barlow" },
+      "section_patterns": ["hero", "programs", "trainers", "schedule", "transformations", "pricing", "testimonials", "join", "contact", "footer"],
+      "vibe": ["energetic", "bold", "high-energy", "athletic", "motivating"],
+      "rationale": "Dark base with a high-energy red and fresh green accent drives action and intensity."
+    },
+    {
+      "name": "Beauty Cosmetic Atelier",
+      "niches": ["beauty", "cosmetic", "cosmetics", "makeup", "beauty bar", "lash brow"],
+      "palette": {
+        "bg": "#FBF6F2",
+        "surface": "#FFFFFF",
+        "text": "#2C2421",
+        "primary": "#9E5C53",
+        "accent": "#D7A98C"
+      },
+      "fonts": { "heading": "Bodoni Moda", "body": "Manrope" },
+      "section_patterns": ["hero", "services", "lookbook", "team", "pricing", "testimonials", "booking", "contact", "footer"],
+      "vibe": ["chic", "editorial", "refined", "warm", "boutique"],
+      "rationale": "Editorial Bodoni headings over warm nude tones give a boutique, fashion-forward feel."
+    }
+  ]
+}

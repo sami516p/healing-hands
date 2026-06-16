@@ -1,0 +1,26 @@
+# Intermediates — always regeneratable, never committed
+.tmp/
+
+# Sealed previous projects
+archives/
+
+# Collected + generated images are project artifacts, not source
+assets/images/
+
+# Secrets
+.env
+credentials.json
+token.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Vercel project config (machine-specific)
+.vercel/
