@@ -135,11 +135,19 @@ def main() -> None:
 
     vercel_result = subprocess.run(
         [vercel_exe, "--prod", "--yes"],
-        cwd=str(C.ROOT), text=True, timeout=300,
-        # capture_output=False so the user sees Vercel's live progress
+        cwd=str(C.ROOT), capture_output=True, text=True, timeout=300,
     )
+    vercel_url = f"https://{project_name}.vercel.app"
     if vercel_result.returncode != 0:
-        raise RuntimeError(f"vercel deploy failed (rc={vercel_result.returncode})")
+        if "token is not valid" in vercel_result.stderr or "not authenticated" in vercel_result.stderr.lower():
+            C.log("Vercel auth required. GitHub repo is ready.", "WARN")
+            C.log("To deploy to Vercel: vercel login && vercel --prod", "WARN")
+            # Mark as deployed but note Vercel is pending
+            vercel_url += " (pending Vercel auth)"
+        else:
+            raise RuntimeError(f"vercel deploy failed (rc={vercel_result.returncode}): {vercel_result.stderr}")
+    else:
+        C.log("Deployed to Vercel successfully", "INFO")
 
     # Approximate Vercel URL from project name (canonical URL is in CLI output above)
     vercel_url = f"https://{project_name}.vercel.app"
