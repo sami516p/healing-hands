@@ -117,8 +117,24 @@ def main() -> None:
 
     # --- Step 5: Vercel deploy (streamed live) ---
     C.log("=== Deploy: Step 5 — Vercel deploy ===")
+    import shutil
+    vercel_exe = shutil.which("vercel")
+    if not vercel_exe:
+        # Windows may have vercel as .cmd
+        vercel_exe = shutil.which("vercel.cmd")
+    if not vercel_exe:
+        # Try common npm global path
+        import os
+        if os.name == "nt":  # Windows
+            npm_path = Path.home() / "AppData" / "Roaming" / "npm" / "vercel.cmd"
+            if npm_path.exists():
+                vercel_exe = str(npm_path)
+
+    if not vercel_exe:
+        raise RuntimeError("vercel CLI not found in PATH. Install with: npm install -g vercel")
+
     vercel_result = subprocess.run(
-        ["vercel", "--prod", "--yes"],
+        [vercel_exe, "--prod", "--yes"],
         cwd=str(C.ROOT), text=True, timeout=300,
         # capture_output=False so the user sees Vercel's live progress
     )
