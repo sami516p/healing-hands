@@ -169,7 +169,7 @@ def main() -> None:
                     if scope_match:
                         C.log(f"Retrying with scope: {scope_match}")
                         vercel_result = subprocess.run(
-                            [vercel_exe, "--prod", "--yes", "--scope", scope_match],
+                            [vercel_exe, "--prod", "--yes", "--scope", scope_match, "--name", project_name],
                             cwd=str(C.ROOT),
                             env=deploy_env,
                             capture_output=True,
